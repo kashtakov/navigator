@@ -1,0 +1,72 @@
+.methods{
+    min-height: 776px;
+    background: url('../../img/methodsbg.png') left top no-repeat;
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .choose{
+        width: 410px;
+        height: 480px;
+        margin-top: 210px;
+        margin-left: 55px;
+        background: #FFFFFF;
+        box-shadow: 5px 5px 30px rgba(98, 165, 244, 0.23);
+        border-radius: 15px;
+        &__method{
+            font-size: 23px;
+            line-height: 27px;
+            letter-spacing: 0.05em;
+            text-transform: capitalize;
+            color: #1D1D1D;
+            font-weight:bolder;
+            margin-top: 45px;
+            margin-left: 45px;
+        }
+        &__carousel{
+            display: block;
+            width: 460px;
+            height: 132px;
+        }
+
+        &__input{
+            border: 1px solid #B7B7B7;
+            border-radius: 3px; 
+            width: 318px;
+            outline: none;
+        }
+
+        input::-webkit-calendar-picker-indicator {
+            -webkit-appearance: none;
+            opacity: 1;
+            color: rgba(0, 0, 0, 0);
+            background: url("../../icons/arrow.svg")  no-repeat;
+            height: 93%;
+            width: 2.8rem;
+            top: 0;
+            z-index: 0;
+            position: absolute;
+            right: 1px;
+            top: 3px;
+            bottom: 0px;
+            
+          }
+
+    }
+
+
+
+
+    .find{
+        width: 410px;
+
+    }
+
+
+
+
+
+
+}
