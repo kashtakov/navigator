@@ -1,3 +1,19 @@
+@mixin btn_dtl{
+    width: 200px;
+    height: 62px;
+    background: #EAF0FE;
+    border-radius: 60px;
+    border: none;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 500;
+    color: #3953FA;
+    outline: none;
+    
+}
+
+
 .methods{
     min-height: 776px;
     background: url('../../img/methodsbg.png') left top no-repeat;
@@ -8,9 +24,10 @@
     }
 
     .choose{
+        position: relative;
         width: 410px;
         height: 480px;
-        margin-top: 210px;
+        margin-top: 167px;
         margin-left: 55px;
         background: #FFFFFF;
         box-shadow: 5px 5px 30px rgba(98, 165, 244, 0.23);
@@ -28,31 +45,131 @@
         &__carousel{
             display: block;
             width: 460px;
-            height: 132px;
+            height: 160px;
         }
 
         &__input{
+            margin-top: 13px;
+            margin-left: 44px;
             border: 1px solid #B7B7B7;
-            border-radius: 3px; 
+            border-radius: 8px; 
             width: 318px;
+            height: 44px;
             outline: none;
         }
+        &__branch{
+            margin-left: 46px;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            color: #1D1D1D;
+            
 
+        }
         input::-webkit-calendar-picker-indicator {
             -webkit-appearance: none;
             opacity: 1;
             color: rgba(0, 0, 0, 0);
             background: url("../../icons/arrow.svg")  no-repeat;
-            height: 93%;
-            width: 2.8rem;
+            height: 6px;
+            width: 20px;
             top: 0;
             z-index: 0;
             position: absolute;
             right: 1px;
-            top: 3px;
-            bottom: 0px;
+            top: 20px;
+            
+            
             
           }
+
+
+        input::-webkit-input-placeholder {
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.05em;
+            color: #CDCDCD;
+            margin-left: 12px;
+        }
+        &__geo{
+            margin-top: 13px;
+            margin-left: 44px;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.05em;
+            color: #3953FA;
+        }
+        &__loading{
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.05em;
+            color: #1D1D1D;
+            font-weight: 500;
+            margin-top: 26px;
+            margin-left: 44px;
+        }
+
+        .loading{
+            display: flex;
+            align-self: center;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.05em;
+            color: #3953FA;
+            margin-left: 44px;
+            margin-top: 18px;
+
+            input[type="radio"] {
+                margin-right: 10px;
+            }
+            
+            label{
+               
+                    margin-right: 20px;
+                
+            }
+        }
+        .order{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            padding: 0;
+            width: 230px;
+            height: 60px;
+            background: #FFFFFF;
+            box-shadow: 10px 14px 46px rgba(98, 165, 244, 0.23);
+            border-radius: 10px;
+            border-color: rgba(0, 0, 0, 0);
+            top:375px;
+            left:300px;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+            text-transform: capitalize;
+            color: #45DE2D;
+            span{
+                display: block;
+                margin-top:  0px ;
+                margin-left: 16px;
+               
+            }
+            
+            img{display: block;
+                width: 40px;
+                height: 40px;
+                margin-right: 15px;
+                margin-top: 8px;
+
+            }
+
+            
+
+
+        }
+
 
     }
 
@@ -62,6 +179,36 @@
     .find{
         width: 410px;
 
+
+        &__divider{
+            margin-top: 202px;
+            width: 80px;
+            height: 0px;
+            border: 3px solid #3953FA;
+        }
+
+        &__lets{
+            margin-top: 50px;
+            font-size: 32px;
+            line-height: 37px;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            color: #1D1D1D;
+        }
+
+        &__text{
+            margin-top: 30px;
+            font-size: 16px;
+            line-height: 25px;
+            letter-spacing: 0.05em;
+            color: #7C7C7C;
+        }
+
+
+        button{
+            @include  btn_dtl;
+            margin-top: 58px;
+        }
     }
 
 
