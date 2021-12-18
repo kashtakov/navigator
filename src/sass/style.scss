@@ -1,12 +1,21 @@
 @import 'blocks/header.scss';
 @import 'blocks/methods';
+@import 'blocks/section-3';
+@import 'blocks/video';
+@import 'blocks/section-5';
+@import 'blocks/section-6';
+@import 'blocks/footer';
 
 
 * {
     font-family: 'Avenir Next Cyr', sans-serif;
 }
 
+body{
+    background-color: rgb(201, 197, 197);
+}
 .page__wrapper{
+    background-color: white;
     max-width: 1240px;
     margin: 0 auto;
 }

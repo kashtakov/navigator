@@ -1,0 +1,105 @@
+@mixin btn_dtl{
+    width: 200px;
+    height: 62px;
+    background: #EAF0FE;
+    border-radius: 60px;
+    border: none;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 500;
+    color: #3953FA;
+    outline: none;
+    
+}
+
+
+.section-3{
+    min-height: 794px;
+    background-image: url('../../img/block3bg.png');
+    background-repeat: no-repeat;
+    background-size: auto ;
+    background-position: right bottom;
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left{
+        width: 410px;
+        margin-left: 30px;
+    }
+
+    .divider{
+        margin-top: 80px;
+        width: 80px;
+        height: 0px;
+        border-bottom: 3px solid #3953FA;
+    }
+
+    .bedding{
+        margin-top: 50px;
+        font-size: 32px;
+        line-height: 37px;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        color: #1D1D1D;
+
+        &__text{
+            margin-top: 50px;
+            font-size: 16px;
+            line-height: 25px;
+            letter-spacing: 0.05em;
+            color: #7C7C7C;
+        }
+
+
+    }
+
+    button{
+        @include  btn_dtl;
+        margin-top: 58px;
+    }
+
+
+
+    &__right{
+        position: relative;
+        width: 410px;
+        margin-top: 10px;
+
+        .chooses{
+
+            margin-top: 14px;
+            margin-left: 20px;
+            width: 322px;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.05em;
+            color: #7C7C7C;
+            &:nth-child(2){
+               text-align: right;
+               position: absolute;
+               right: 140px;
+               top: 186px;
+            }
+            &:nth-child(3){
+                margin-top: 300px;
+            }
+
+           
+            span{
+                margin-top: 120px;
+                display: block;
+                font-size: 18px;
+                line-height: 21px;
+                letter-spacing: 0.05em;
+                color: #1D1D1D;
+                font-weight: 500;
+            }
+
+        }
+    }
+}
+

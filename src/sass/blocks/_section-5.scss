@@ -1,0 +1,101 @@
+@mixin btn_dtl{
+    width: 200px;
+    height: 62px;
+    background: #EAF0FE;
+    border-radius: 60px;
+    border: none;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 500;
+    color: #3953FA;
+    outline: none;
+    
+}
+
+.section-5{
+    min-height: 794px;
+
+    background-image: url(../../img/Group_9.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom  right;
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left{
+        width: 410px;
+        margin-left: 30px;
+    }
+
+    .divider{
+        margin-top: 300px;
+        width: 80px;
+        height: 0px;
+        border-bottom: 3px solid #3953FA;
+    }
+
+    .bedding{
+        margin-top: 50px;
+        font-size: 32px;
+        line-height: 37px;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        color: #1D1D1D;
+
+        &__text{
+            margin-top: 50px;
+            font-size: 16px;
+            line-height: 25px;
+            letter-spacing: 0.05em;
+            color: #7C7C7C;
+        }
+
+
+    }
+
+    button{
+        @include  btn_dtl;
+        margin-top: 58px;
+    }
+
+    &__right{
+        .awsome__mail{
+            margin-top: 438px;
+            margin-right: 290px;
+            font-size: 16px;
+            line-height: 25px;
+            letter-spacing: 0.05em;
+            color: #7C7C7C;
+        }
+        .statisics{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 260px;
+            margin-top: 20px;
+            &__label{
+                margin-top: 17px;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 0.05em;
+                color: #FFFFFF;
+                text-align: center;
+
+            }
+            &__value{
+               
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 0.05em;
+                color: #FFFFFF;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+        
+    }
+}

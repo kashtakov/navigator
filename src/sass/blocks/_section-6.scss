@@ -1,0 +1,46 @@
+.section-6{
+    min-height: 861px;
+    background-image: url(../../img/Group10.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left bottom;
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__carousel{
+        margin-top: 195px;
+        display: block;
+        background-color: #fff;
+        width: 455px;
+        height: 455px;
+    }
+     &__right{
+       
+        .bedding{
+            margin-left: 180px;
+            margin-top: 347px;
+            width: 280px;
+            font-size: 32px;
+            line-height: 37px;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            color: #1D1D1D;
+            &__text{
+                margin-top: 30px;
+                margin-left: 180px;
+                width: 370px;
+                font-size: 16px;
+                line-height: 25px;
+                letter-spacing: 0.05em;
+                color: #7C7C7C;
+            }
+        
+        }
+
+
+    }
+   
+}

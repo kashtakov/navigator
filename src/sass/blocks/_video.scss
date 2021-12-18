@@ -1,0 +1,63 @@
+@mixin btn_dtl{
+    width: 200px;
+    height: 62px;
+    background: #EAF0FE;
+    border-radius: 60px;
+    border: none;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 500;
+    color: #3953FA;
+    outline: none;
+    
+}
+
+.video{
+    background: url('../../img/block4bg.png') top left no-repeat;
+    min-height: 683px;
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .video__button{
+        display: block;
+        position: absolute;
+        top: 300px;
+    }
+
+    &__right{
+        margin-top: 100px;
+        width: 389px;
+    }
+    &__divider{
+        margin-top: 100px;
+        width: 80px;
+        height: 0px;
+        border-bottom: 3px solid #3953FA;
+        }
+
+    &__title{
+        margin-top: 50px;
+        font-size: 32px;
+        line-height: 37px;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        color: #1D1D1D;
+
+    }
+    &__text{
+        margin-top: 50px;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0.05em;
+        color: #7C7C7C;
+    }
+
+    button{
+        @include  btn_dtl;
+        margin-top: 58px;
+    }
+}
