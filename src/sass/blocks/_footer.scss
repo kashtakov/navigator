@@ -1,4 +1,5 @@
 .footer{
+    
     min-height: 645px;
     background-image: url(../../img/footer__bg.png);
     background-repeat: no-repeat;
@@ -77,4 +78,107 @@
     &__bottom{
         display: flex;
     }
+
+    .subheader{
+        margin-top: 70px;
+        font-size: 20px;
+        line-height: 31px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        font-weight: 500;
+    }
+
+    .text{
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+    }
+
+    input[type="text"]{
+        margin-top: 14px;
+        width: 300px;
+        height: 50px;
+        background: #FFFFFF;
+        box-shadow: 0px 11px 22px #0057BE;
+        border-radius: 65px;
+        outline: none;
+        border: none;
+        
+    }
+    input::placeholder {
+        
+        color: #E1E1E1;
+        font-weight: 500;
+    }
+
+    &__bottom{
+
+      
+        &__item{
+
+            &__divider{
+                width: 100px;
+                height: 0px;
+                border-bottom: 2px solid #FFFFFF;
+            }
+
+            
+
+             ul{
+                list-style-type: none;
+                padding-left: 0;
+             }
+
+             li{
+                 margin-top: 5px;
+             }
+
+             a{
+                text-decoration: none;
+                font-size: 14px;
+                line-height: 17px;
+                font-weight: medium;
+                letter-spacing: 0.05em;
+                color: rgba(255, 255, 255, 0.6);
+
+             }
+
+
+            &:first-child{
+                width: 360px;
+                margin-left: 80px;
+
+            }
+                .text{
+                    margin-top: 31px;
+                }
+
+            &:nth-child(2){
+                margin-left: 95px;
+            }
+            &:nth-child(3){
+                margin-left: 91px;
+            }
+            &:nth-child(4){
+                margin-left: 91px;
+            }
+
+            
+            position: relative;
+                button{
+                    position: absolute;
+                    top:213px;
+                    left: 245px;
+                    width: 50px;
+                    height: 50px;
+                    background-color: rgba(0, 0, 0, 0);
+                    
+                    border-radius: 100%;
+                    border:none;
+                    outline: none;
+                }
+        }
+    }
+  
 }
