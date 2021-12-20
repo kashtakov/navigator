@@ -30,6 +30,7 @@
                 background-color: #fff;
                 border-radius: 100%;
                 margin-bottom: 5px;
+               
 
                 img{
                     display: block;
@@ -126,6 +127,7 @@
             
 
              ul{
+                 margin-top: 21px;
                 list-style-type: none;
                 padding-left: 0;
              }
@@ -179,6 +181,26 @@
                     outline: none;
                 }
         }
+    }
+
+    .footer__bottom__divider{
+        margin-top: 13px;
+        height: 0px;
+        border-bottom: 2px solid #FFFFFF;
+        width: 58px;
+       
+    }
+    .footer__bottom__divider__services{
+        margin-top: 13px;
+        height: 0px;
+        border-bottom: 2px solid #FFFFFF;
+        width: 86px;
+    }
+    .footer__bottom__divider__faq{
+        margin-top: 13px;
+        height: 0px;
+        border-bottom: 2px solid #FFFFFF;
+        width: 46px;
     }
   
 }

@@ -23,10 +23,13 @@
         justify-content: space-between;
     }
 
-    &__button{
+    .video__button{
+        margin-top: 484px;
+        margin-left: 461px;
         width: 90px;
         height: 90px;
-        background-color: rgba(0, 0, 0, 0);
+        background: none;
+      
         
         img{
             display: block;
