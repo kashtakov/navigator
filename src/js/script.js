@@ -7,4 +7,10 @@ $(document).ready(function(){
         nextArrow:'<button type="button" class="slick-next"><img src="../icons/Arrow_next.svg"></button>',
      
     });
+
+    $('.section-6__carousel').slick({
+        dots: true,
+        arrows:false,
+     
+    });
   });

@@ -11,11 +11,62 @@
     }
 
     &__carousel{
-        margin-top: 195px;
+        
         display: block;
-        background-color: #fff;
         width: 455px;
         height: 455px;
+        .block{
+            margin-top: 250px;
+            width: 452px;
+            height: 335px;
+            background: #FFFFFF;
+            // box-shadow: 0px 12px 56px rgba(221, 219, 255, 0.9);
+            border-radius: 10px;
+            &__avatar{
+               position: relative;
+              
+                img{
+                    position: absolute;
+                    top: -56px;
+                    left:170px;
+                    display: block;
+                    width: 126px;
+                    height: 126px;
+                    border: 7px solid #FFFFFF;
+                    border-radius: 100%;
+                    filter: drop-shadow(4px 7px 29px rgba(198, 198, 255, 0.43));
+
+                }
+                
+            }
+            &__name{
+                padding-top: 76px;
+                font-family: 'Damion', cursive;
+                font-size: 26px;
+                line-height: 48px;
+                text-align: center;
+                letter-spacing: 0.05em;
+                color: #7C7C7C;
+            }
+            &__city{
+                font-size: 14px;
+                line-height: 22px;
+                text-align: center;
+                letter-spacing: 0.05em;
+                color: #7C7C7C;
+                margin-bottom: 13px;
+            }
+            &__text{
+                margin: 0 auto;
+                width: 356px;
+                font-size: 16px;
+                line-height: 25px;
+                text-align: center;
+                letter-spacing: 0.05em;
+
+color: #7C7C7C;
+            }
+        }
     }
      &__right{
        
@@ -42,5 +93,38 @@
 
 
     }
-   
+   .slick-dots{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       list-style-type: none;
+     
+       
+   }
+   .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 12px;
+    margin: 31px 8px;
+    height: 12px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: url(../../icons/Ellipse.png) no-repeat 0 0 / cover;
+}
+.slick-dots li.slick-active button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 16px;
+    margin: 29px 8px;
+    height: 16px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: url(../../icons/Ellipse_active.png) no-repeat 0 0 / cover;
+}
 }
