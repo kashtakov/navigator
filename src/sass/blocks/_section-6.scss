@@ -6,6 +6,7 @@
     background-position: left bottom;
 
     &__wrapper{
+       
         display: flex;
         justify-content: space-between;
     }
@@ -69,7 +70,20 @@ color: #7C7C7C;
         }
     }
      &__right{
-       
+        position: relative;
+        .manimg{
+            position: absolute;
+            top:167px;
+            right: -9px;
+            display: block;
+            width: 126px;
+            height: 126px;
+            border: 7px solid #FFFFFF;
+            border-radius: 100%;
+            filter: drop-shadow(4px 7px 29px rgba(198, 198, 255, 0.43));
+            
+        }
+
         .bedding{
             margin-left: 180px;
             margin-top: 347px;
