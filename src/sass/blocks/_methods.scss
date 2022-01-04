@@ -230,6 +230,9 @@
     border:none;
     background: rgba(0, 0, 0, 0);
     outline: none;
+    img{
+        box-shadow: none;
+    }
 }
 
 .slick-next{
@@ -239,9 +242,24 @@
     border:none;
     background: rgba(0, 0, 0, 0);
     outline: none;
+    box-shadow: none;
+    img{
+        box-shadow: none;
+        transform: rotateY(180deg);
+    }
     
  
 
 }
+
+.slick-slide {
+    margin: 10px 20px ;
+   
+  }
+  /* the parent */
+  .slick-list {
+    margin: -10px -20px ;
+    
+  }
 
 }
